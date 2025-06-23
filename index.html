@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Quote of the Day</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Quote of the Day</h1>
+    <div class="quote-container">
+      <div class="quote-text" id="quote">
+        "The only way to do great work is to love what you do."
+      </div>
+      <div class="quote-author" id="author">
+        - Steve Jobs
+      </div>
+      <div class="quote-date" id="date">
+        <!-- Date will be inserted here -->
+      </div>
+    </div>
+    <div class="button-container">
+      <button class="new-quote-btn" onclick="generateNewQuote()">
+        New Quote
+      </button>
+      <button class="explain-quote-btn" onclick="showExplanation()">
+        Explain Quote
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal for explanation -->
+  <div id="explanationModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeExplanation()">&times;</span>
+      <h2>Quote Explanation</h2>
+      <div id="explanationText"></div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
